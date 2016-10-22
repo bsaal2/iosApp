@@ -13,4 +13,6 @@ this.route('museum',{path:'/museum'});
 this.route('adventure',{path:'/adventure'});
 this.route('trek',{path:'/trek'});
 this.route('hill',{path:'/hill'});
+
+this.route('message',{path:'/message'});
 });

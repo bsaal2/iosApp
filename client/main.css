@@ -50,3 +50,8 @@
 .list-block .item-subtitle{
   color:darkgreen;
 }
+
+/*============ Message =============================*/
+.name{
+  font-weight: bold;
+}

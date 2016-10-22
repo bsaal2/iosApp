@@ -1,6 +1,13 @@
 <template name="layout">
   <div class="statusbar-overlay"></div>
 
+<!-- =========== Panel ==================== -->
+  <div class="panel-overlay"></div>
+  <div class="panel panel-right panel-reveal">
+     {{> sidebar }}
+  </div>
+<!-- =============End Panel========================= -->
+
   <div class="views">
     <div class="view view-main">
        {{> yield }}
