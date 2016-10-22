@@ -1,0 +1,94 @@
+<template name="about">
+  <!-- ============ navbar ================= -->
+  <div class="navbar">
+     <div class="navbar-inner">
+        <div class="center">Our Members</div>
+     </div>
+  </div>
+  <!-- =========== end of navbar ======================== -->
+
+  <!-- ================ tabBar ===================== -->
+  <div class="toolbar tabbar">
+     <div class="toolbar-inner">
+       <a href="{{pathFor 'home'}}" class="tab-link">
+         <i class="fa fa-newspaper-o fa-2x"></i>
+       </a>
+       <a href="{{pathFor 'members'}}" class="tab-link">
+         <i class="fa fa-users fa-2x"></i>
+       </a>
+       <a href="{{pathFor 'about'}}" class="tab-link">
+         <i class="fa fa-info-circle fa-2x"></i>
+       </a>
+       <a href="{{pathFor 'link'}}" class="tab-link">
+         <i class="fa fa-link fa-2x"></i>
+       </a>
+     </div>
+  </div>
+  <!-- ================= end of tabBar ==================== -->
+
+  <!-- =============== pages =============== -->
+   <div class="pages navbar-through toolbar-through">
+     <div class="page" data-page="home">
+       <div class="page-content">
+       <!-- =============== Card ============================ -->
+       <div class="content-block-title">Glimpse Of Pokhara </div>
+        <div class="card">
+          <div class="card-content">
+           <div class="card-content-inner">
+             Presence of panoramic view of Western Himalayan ranges
+             like-Fishtail, Annapurna and Dhaulagiri etc and surrounded by various
+             vegetations of the mid hills and inhabitants of incredible cultural practices of multi ethnic group are the essence of this tiny town Pokhara in Nepal. This is also a place beautified with its natural gifts of lakes, flora & fauna, caves, gorges where pilgrims or worshipers have access to popular temples, mosques, churches and monasteries. Pokhara can be considered as an ideal and one of the most preferred destinations because of its unique characteristic combination of both nature and culture.
+
+           </div>
+          </div>
+        </div>
+       <!-- ================ End of Card ========================== -->
+
+       <!-- ================ List View ========================== -->
+       <div class="content-block-title">Major Attractions of Pokhara</div>
+       <div class="list-block">
+         <ul>
+           <li>
+             <a href="{{pathFor 'natural'}}" class="item-link item-content">
+                 <div class="item-media"><i class="fa fa-check"></i></div>
+                 <div class="item-inner">Natural Attractions</div>
+             </a>
+           </li>
+
+           <li>
+             <a href="{{pathFor 'museum'}}" class="item-link item-content">
+                 <div class="item-media"><i class="fa fa-check"></i></div>
+                 <div class="item-inner">Museums</div>
+             </a>
+           </li>
+
+           <li>
+             <a href="{{pathFor 'adventure'}}" class="item-link item-content">
+                 <div class="item-media"><i class="fa fa-check"></i></div>
+                 <div class="item-inner">Adventures</div>
+             </a>
+           </li>
+
+           <li>
+             <a href="{{pathFor 'trek'}}" class="item-link item-content">
+                 <div class="item-media"><i class="fa fa-check"></i></div>
+                 <div class="item-inner">Major Trekking</div>
+             </a>
+           </li>
+
+           <li>
+             <a href="{{pathFor 'hill'}}" class="item-link item-content">
+                 <div class="item-media"><i class="fa fa-check"></i></div>
+                 <div class="item-inner">Hill Stations</div>
+             </a>
+           </li>
+         </ul>
+       </div>
+       <!-- ================= End of List ============================== -->
+
+       </div>
+     </div>
+   </div>
+  <!-- ================ end of pages ============ -->
+
+</template>

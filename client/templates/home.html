@@ -1,0 +1,95 @@
+<template name="home">
+  <!-- ============ navbar ================= -->
+  <div class="navbar">
+     <div class="navbar-inner">
+        <div class="center">Home</div>
+     </div>
+  </div>
+  <!-- =========== end of navbar ======================== -->
+
+  <!-- ================ tabBar ===================== -->
+  <div class="toolbar tabbar">
+     <div class="toolbar-inner">
+       <a href="{{pathFor 'home'}}" class="tab-link">
+         <i class="fa fa-newspaper-o fa-2x"></i>
+       </a>
+       <a href="{{pathFor 'members'}}" class="tab-link">
+         <i class="fa fa-users fa-2x"></i>
+       </a>
+       <a href="{{pathFor 'about'}}" class="tab-link">
+         <i class="fa fa-info-circle fa-2x"></i>
+       </a>
+       <a href="{{pathFor 'link'}}" class="tab-link">
+         <i class="fa fa-link fa-2x"></i>
+       </a>
+     </div>
+  </div>
+  <!-- ================= end of tabBar ==================== -->
+
+  <!-- =============== pages =============== -->
+   <div class="pages navbar-through toolbar-through">
+     <div class="page" data-page="home">
+       <div class="page-content">
+       <!-- =============== Cards ============================ -->
+
+         <div class="card facebook-card">
+           <div class="card-header">
+             <div class="facebook-avatar"><img src="/avatar.jpg" width="34" height="34" /></div>
+             <div class="facebook-name">John Doe</div>
+             <div class="facebook-date">Monday at 2:15 PM</div>
+           </div>
+             <div class="card-content">
+                <div class="card-content-inner">
+                  <p>An interaction with Mr. Gobinda Bdr. Karkee director General, Department of Tourism. (Ministry of Cultural, Tourism and Civil Aviation) among tourism entrepreneur about various tourism issues. It was a day of importance to have an interaction meeting with Mr. Gobinda Bdr. Karkee Director General, Department of Tourism. (Ministry of </p>
+                  <img src="/interaction.jpg" width="100%" />
+                </div>
+             </div>
+             <div class="card-footer">
+               <a href="#" class="link">Like</a>
+               <a href="#" class="link">More</a>
+             </div>
+         </div>
+
+         <div class="card facebook-card">
+           <div class="card-header">
+             <div class="facebook-avatar"><img src="/avatar.jpg" width="34" height="34" /></div>
+             <div class="facebook-name">John Doe</div>
+             <div class="facebook-date">Monday at 2:15 PM</div>
+           </div>
+             <div class="card-content">
+                <div class="card-content-inner">
+                  <p>what a nice photo i took yesterday!</p>
+                  <img src="/interaction.jpg" width="100%"/>
+                </div>
+             </div>
+             <div class="card-footer">
+               <a href="#" class="link">Like</a>
+               <a href="#" class="link">More</a>
+             </div>
+         </div>
+
+         <div class="card facebook-card">
+           <div class="card-header">
+             <div class="facebook-avatar"><img src="/avatar.jpg" width="34" height="34" /></div>
+             <div class="facebook-name">John Doe</div>
+             <div class="facebook-date">Monday at 2:15 PM</div>
+           </div>
+             <div class="card-content">
+                <div class="card-content-inner">
+                  <p>what a nice photo i took yesterday!</p>
+                  <img src="/interaction.jpg" width="100%" />
+                </div>
+             </div>
+             <div class="card-footer">
+               <a href="#" class="link">Like</a>
+               <a href="#" class="link">More</a>
+             </div>
+         </div>
+       <!-- ================ end of cards ========================== -->
+
+       </div>
+     </div>
+   </div>
+  <!-- ================ end of pages ============ -->
+
+</template>
