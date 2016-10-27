@@ -15,4 +15,5 @@ this.route('trek',{path:'/trek'});
 this.route('hill',{path:'/hill'});
 
 this.route('message',{path:'/message'});
+this.route('contact',{path:'/contact'});
 });

@@ -1,14 +1,17 @@
 <template name="members">
   <!-- ============ navbar ================= -->
-  <div class="navbar">
+  <div class="navbar theme-header">
      <div class="navbar-inner">
         <div class="center">Our Members</div>
+        <div class="right">
+          <a href="#" class="open-panel link"><i class="fa fa-bars"></i></a>
+        </div>
      </div>
   </div>
   <!-- =========== end of navbar ======================== -->
 
   <!-- ================ tabBar ===================== -->
-  <div class="toolbar tabbar">
+  <div class="toolbar tabbar theme-header">
      <div class="toolbar-inner">
        <a href="{{pathFor 'home'}}" class="tab-link">
          <i class="fa fa-newspaper-o fa-2x"></i>
@@ -36,7 +39,7 @@
            <ul>
             <!-- =========== List Items ====================  -->
               <li>
-                 <a href="#" onclick="window.open('http://www.pokharachamber.org.np/','_system','location=yes')" class="item-link item-content">
+                 <a href="#" onclick="window.open('http://www.pokharachamber.org.np/','_system','hardwareback=yes,location=yes')" class="item-link item-content">
                    <div class="item-inner">
                       <div class="item-title-row">
                         <div class="item-title">PCCI</div>

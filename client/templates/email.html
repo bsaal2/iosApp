@@ -1,0 +1,48 @@
+<template name="email">
+  <div class="popup-overlay"></div>
+  <div class="popup popup-email">
+    <div class="content-block">
+     <div class="content-block-title">Contact Us</div>
+     <div class="list-block">
+       <ul>
+         <!-- ============= List items =================== -->
+         <li>
+            <div class="item-content">
+              <div class="item-media"><i class="fa fa-user"></i></div>
+              <div class="item-inner">
+               <div class="item-input">
+                <input type="text" placeholder="Enter Name" required/>
+               </div>
+              </div>
+            </div>
+         </li>
+
+         <li>
+            <div class="item-content">
+              <div class="item-media"><i class="fa fa-envelope"></i></div>
+              <div class="item-inner">
+               <div class="item-input">
+                <input type="email" placeholder="Email" required/>
+               </div>
+              </div>
+            </div>
+         </li>
+
+         <li>
+            <div class="item-content">
+              <div class="item-media"><i class="fa fa-comment"></i></div>
+              <div class="item-inner">
+               <div class="item-input">
+                <textarea placeholder="Leave us message here"></textarea>
+               </div>
+              </div>
+            </div>
+         </li>
+         <!-- ============ End list=============================== -->
+       </ul>
+       <p><a href="" type="submit" class="button active">Submit</a></p>
+       <a href="#" class="button button-fill color-green close-popup">Close</a>
+     </div>
+    </div>
+  </div>
+</template>

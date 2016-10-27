@@ -1,0 +1,40 @@
+<template name="contact">
+  <!-- ============ navbar ================= -->
+  <div class="navbar theme-header">
+     <div class="navbar-inner">
+        <div class="left sliding">
+         <a href="{{pathFor 'home'}}" class="link back">Back</a>
+        </div>
+        <div class="center sliding">Contact Us</div>
+     </div>
+  </div>
+  <!-- =========== end of navbar ======================== -->
+
+  <!-- =============== pages =============== -->
+   <div class="pages navbar-through toolbar-through">
+     <div class="page" data-page="home">
+       <div class="page-content">
+       <!-- =============== Card ============================ -->
+        <div class="card">
+          <div class="card-content">
+           <div class="card-content-inner map-container">
+              {{> googleMap name="exampleMap" options=exampleMapOptions}}
+           </div>
+          </div>
+          <div class="card-footer">
+            <p><i class="fa fa-phone"></i> Phone:77-61-462489, 977-61-462466<br/>
+               <i class="fa fa-envelope"></i> Email: info@pokharatourism.org.np<br />
+               <i class="fa fa-phone"></i> Web: www.pokharatourism.org.np <br /><br/>
+               <a href="#" class="button color-teal ripple-amber open-popup active"><i class="fa fa-envelope"></i> Send Email</a>
+            </p>
+         </div>
+        </div>
+       <!-- ================ End of Card ========================== -->
+       </div>
+     </div>
+   </div>
+  <!-- ================ end of pages ============ -->
+
+  {{> email}}
+
+</template>

@@ -1,8 +1,8 @@
 <template name="home">
   <!-- ============ navbar ================= -->
-  <div class="navbar">
+  <div class="navbar theme-header">
      <div class="navbar-inner">
-        <div class="center">Home</div>
+        <div class="center">News&Events</div>
         <div class="right">
           <a href="#" class="open-panel link"><i class="fa fa-bars"></i></a>
         </div>
@@ -11,7 +11,7 @@
   <!-- =========== end of navbar ======================== -->
 
   <!-- ================ tabBar ===================== -->
-  <div class="toolbar tabbar">
+  <div class="toolbar tabbar theme-header">
      <div class="toolbar-inner">
        <a href="{{pathFor 'home'}}" class="tab-link">
          <i class="fa fa-newspaper-o fa-2x"></i>
@@ -38,54 +38,90 @@
          <div class="card facebook-card">
            <div class="card-header">
              <div class="facebook-avatar"><img src="/avatar.jpg" width="34" height="34" /></div>
-             <div class="facebook-name">John Doe</div>
-             <div class="facebook-date">Monday at 2:15 PM</div>
+             <div class="facebook-name">Som Thapa</div>
+             <div class="facebook-date">Wednesday October 2016</div>
            </div>
              <div class="card-content">
                 <div class="card-content-inner">
-                  <p>An interaction with Mr. Gobinda Bdr. Karkee director General, Department of Tourism. (Ministry of Cultural, Tourism and Civil Aviation) among tourism entrepreneur about various tourism issues. It was a day of importance to have an interaction meeting with Mr. Gobinda Bdr. Karkee Director General, Department of Tourism. (Ministry of </p>
+                  <p>An interaction with Mr. Gobinda Bdr. Karkee director General, Department of Tourism. (Ministry of Cultural, Tourism and Civil Aviation) among tourism entrepreneur about various tourism issues.</p>
                   <img src="/interaction.jpg" width="100%" />
                 </div>
              </div>
              <div class="card-footer">
                <a href="#" class="link">Like</a>
-               <a href="#" class="link">More</a>
+               <a href="#" data-popup=".popup-newsOne" class="link open-popup">More</a>
              </div>
          </div>
 
          <div class="card facebook-card">
            <div class="card-header">
              <div class="facebook-avatar"><img src="/avatar.jpg" width="34" height="34" /></div>
-             <div class="facebook-name">John Doe</div>
-             <div class="facebook-date">Monday at 2:15 PM</div>
+             <div class="facebook-name">Som Thapa</div>
+             <div class="facebook-date">Wednesday October 2016</div>
            </div>
              <div class="card-content">
                 <div class="card-content-inner">
-                  <p>what a nice photo i took yesterday!</p>
-                  <img src="/interaction.jpg" width="100%"/>
+                  <p>Pokhara World Peace Puja-2016</p>
+                  <img src="/peace-pagoda.jpg" width="100%"/>
                 </div>
              </div>
              <div class="card-footer">
                <a href="#" class="link">Like</a>
-               <a href="#" class="link">More</a>
+               <a href="#" data-popup=".popup-newsTwo" class="link open-popup">More</a>
              </div>
          </div>
 
          <div class="card facebook-card">
            <div class="card-header">
              <div class="facebook-avatar"><img src="/avatar.jpg" width="34" height="34" /></div>
-             <div class="facebook-name">John Doe</div>
-             <div class="facebook-date">Monday at 2:15 PM</div>
+             <div class="facebook-name">Som Thapa</div>
+             <div class="facebook-date">Wednesday October 2016</div>
            </div>
              <div class="card-content">
                 <div class="card-content-inner">
-                  <p>what a nice photo i took yesterday!</p>
-                  <img src="/interaction.jpg" width="100%" />
+                  <p>Nepal has been placed at the number one of 10 countries</p>
+                  <img src="/trek.jpg" width="100%" />
                 </div>
              </div>
              <div class="card-footer">
                <a href="#" class="link">Like</a>
-               <a href="#" class="link">More</a>
+               <a href="#" data-popup=".popup-newsThree" class="link open-popup">More</a>
+             </div>
+         </div>
+
+         <div class="card facebook-card">
+           <div class="card-header">
+             <div class="facebook-avatar"><img src="/avatar.jpg" width="34" height="34" /></div>
+             <div class="facebook-name">Som Thapa</div>
+             <div class="facebook-date">Wednesday October 2016</div>
+           </div>
+             <div class="card-content">
+                <div class="card-content-inner">
+                  <p>Review & Planning workshop</p>
+                  <img src="/review.jpg" width="100%" />
+                </div>
+             </div>
+             <div class="card-footer">
+               <a href="#" class="link">Like</a>
+               <a href="#" data-popup=".popup-newsFour" class="link open-popup">More</a>
+             </div>
+         </div>
+
+         <div class="card facebook-card">
+           <div class="card-header">
+             <div class="facebook-avatar"><img src="/avatar.jpg" width="34" height="34" /></div>
+             <div class="facebook-name">Som Thapa</div>
+             <div class="facebook-date">Wednesday October 2016</div>
+           </div>
+             <div class="card-content">
+                <div class="card-content-inner">
+                  <p>17th Pokhara Street Festival</p>
+                  <img src="/street-festival.jpg" width="100%" />
+                </div>
+             </div>
+             <div class="card-footer">
+               <a href="#" class="link">Like</a>
+               <a href="#" data-popup=".popup-newsFive" class="link open-popup">More</a>
              </div>
          </div>
        <!-- ================ end of cards ========================== -->
@@ -94,5 +130,11 @@
      </div>
    </div>
   <!-- ================ end of pages ============ -->
+
+  {{>newsOne}}
+  {{>newsTwo}}
+  {{>newsThree}}
+  {{>newsFour}}
+  {{>newsFive}}
 
 </template>
